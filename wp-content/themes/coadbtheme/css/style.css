@@ -1,0 +1,179 @@
+.contact-us-main {
+    background: url(../images/bg.png) no-repeat center;
+    background-size: cover;
+    padding: 50px 0 45px;
+}
+
+.faq-main {
+    background: url(../images/bg.png) no-repeat center;
+    background-size: cover;
+    padding: 50px 0 40px;
+}
+
+.faq-section {
+    background-color: #e9eef1;
+    padding: 50px 0 100px;
+/*    margin-top: -5%;
+*/}
+
+.faq-section .panel {
+    border: none;
+    margin-bottom: 20px;
+}
+
+.faq-section .panel-heading {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.faq-section .panel-title a {
+    font-size: 20px;
+    color: #345a9c;
+    font-family: "Vidaloka-Regular";
+}
+
+.faq-section .panel-body {
+    font-family: "RobotoSlab-Regular";
+    font-size: 14px;
+    line-height: 1.8;
+    color: #444;
+    padding: 20px;
+}
+
+.faq-section .panel-body ul, .faq-section .panel-body ol {
+    margin: 15px 0;
+}
+
+.faq-section .panel-body .comparison-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.faq-section .panel-body li {
+    color: #787878;
+}
+
+.faq-section .panel-body .small-heading {
+    font-size: 18px;
+    font-weight: 700;
+    color: #345a9c;
+    margin: 15px 0 10px;
+}
+
+.faq-section .heading {
+    font-family: "Vidaloka-Regular";
+    font-size: 30px;
+    color: #444444;
+    margin: 0 0 20px;
+}
+
+.faq-section .panel-body .comparison-list li:first-child {
+    font-size: 18px;
+    color: #345a9c;
+    line-height: 1.8;
+}
+
+.video-section-wrap, .lookalike-section-wrap {
+    padding: 100px 0;
+    /*margin-top: -5%;*/
+}
+
+.lookalike-section-wrap .heading {
+    font-family: "Vidaloka-Regular";
+    font-size: 30px;
+    text-align: center;
+    color: #444444;
+    margin: 30px 0 0;
+}
+
+.lookalike-section-wrap .facebook-btn {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin: 30px auto 0;
+}
+
+.lookalike-section-wrap .facebook-btn i {
+    margin-right: 8px;
+}
+
+.surname-list-wrap {
+    padding: 50px 0;
+    background-color: #e9eef1;
+}
+
+.surname-list-wrap .panel {
+    border: none;
+    margin-bottom: 20px;
+}
+
+.surname-list-wrap .panel-title a {
+    font-family: "Vidaloka-Regular";
+    font-size: 24px;
+    color: #345a9c;
+    background: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.surname-list-wrap .panel-title a:hover, .surname-list-wrap .panel-title a:focus {
+    border: none;
+}
+
+.surname-list-wrap a {
+    font-size: 14px;
+    background: #dddddd;
+    color: #444;
+    padding: 10px 15px;
+    border-radius: 0;
+    border-left: 3px solid transparent;
+    margin: 0 5px 10px 0;
+    display: inline-block;
+}
+.surname-list-wrap a:hover, .surname-list-wrap a:focus {
+    border-left: 3px solid #345a9c;
+    color: #345a9c;
+}
+
+.surname-list-wrap .panel-heading {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.surname-list-wrap .panel-body {
+    padding: 20px;
+}
+
+.surname-list-wrap .heading {
+    font-family: "Vidaloka-Regular";
+    font-size: 30px;
+    text-align: center;
+    color: #444444;
+    margin: 0 0 30px;
+}
+
+@media (max-width: 767px) {
+    .comment-wrap {
+        padding: 10px;
+    }
+    .faq-section .panel-title a {
+        font-size: 16px;
+    }
+    .faq-section .panel-heading {
+        padding: 15px;
+    }
+    .faq-section .panel {
+        margin-bottom: 10px;
+    }
+    .faq-section .heading {
+        font-size: 22px;
+        margin: 30px 0 15px
+    }
+    .video-section-wrap .heading {
+        font-size: 22px;
+        line-height: 1.4;
+    }
+}

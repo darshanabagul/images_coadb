@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Vidaloka-Regular";
+  src: url('../fonts/Vidaloka-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: "RobotoSlab-Thin";
+  src: url('../fonts/RobotoSlab-Thin.ttf') format('truetype');
+}
+@font-face {
+  font-family: "RobotoSlab-Regular";
+  src: url('../fonts/RobotoSlab-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: "RobotoSlab-Light";
+  src: url('../fonts/RobotoSlab-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: "RobotoSlab-Bold";
+  src: url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+}

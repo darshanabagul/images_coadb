@@ -1,0 +1,230 @@
+/*
+    Theme Name: coadb2-theme
+    Theme URI: coadb.com
+    Description: Coadb2 Theme (based on html5blank)
+    Version: 0.0.3
+    Author: Karl Wilcox
+    Author URI: http://karlwilcox.com
+    Tags: Blank, HTML5, CSS3
+
+    License: MIT
+    License URI: http://opensource.org/licenses/mit-license.php
+*/
+
+
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+
+/* global box-sizing */
+*, 
+*:after, 
+*:before {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header > h1 {
+    font-family: 'Rockewell-Bold', serif;
+    font-size: 1.1em;
+    font-weight: 800;
+    text-decoration: underline;
+    text-align: center;
+    color: #000;
+}
+.inner-page-nav {
+    background: white;
+    padding-top: 20px;
+}
+/*------------------------------------*\
+    Search Form (and variants)
+\*------------------------------------*/
+
+.search-table {
+    width: 300px;
+    display: table;
+}
+
+.sidebar-widget .search-table {
+    width: 240px;
+}
+
+.searchform {
+    display: table-cell;
+    vertical-align: top;
+    line-height: 1.11;
+}
+.header-title {
+    font-family: 'Rockewell-Bold', serif;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: underline;
+    text-align: center;
+    color: #000;
+}
+.searchform input {
+    height: 40px;
+    font-size: 16px;
+    padding: 8px 15px;
+    margin: 0px;
+    color: white;
+    border: 1px solid #d2d2d2;
+    width: 100%;
+    display: table-cell;
+}
+.header-search {
+    float: right;
+}
+.header-search .searchform input {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.widget-search .searchform input {
+    background-color: white;
+}
+
+
+.searchform input {
+    background-color: #506b9d;
+}
+
+.search-button {
+    display: table-cell;
+    width: 45px;
+    vertical-align: top;
+    padding-left: 5px;
+}
+
+.search-button input {
+    height: 40px;
+    width:  40px;
+    background-image: url('../images/big-search.png');
+    background-position: -40px;
+    border-radius: 8px;
+}
+
+span.wpcf7-form-control-wrap input, span.wpcf7-form-control-wrap textarea {
+    background-color: #a0bbef;
+}
+
+.search-field input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+}
+.search-field input::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+}
+.search-field input:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+}
+.search-field input:-moz-placeholder { /* Firefox 18- */
+  color: white;
+}
+
+
+.search-button input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #c0c0c0;
+}
+.search-button input::-moz-placeholder { /* Firefox 19+ */
+  color: #c0c0c0;
+}
+.search-button input:-ms-input-placeholder { /* IE 10+ */
+  color: #c0c0c0;
+}
+.search-button input:-moz-placeholder { /* Firefox 18- */
+  color: #c0c0c0;
+}
+
+.search-button input:hover {
+    background-position: 0px 0px;
+}
+
+.page-wrap {
+    background: white;
+}
+/* footer */
+.footer {
+    clear: both;
+    display: block;
+    text-align: center;
+    border-top: 1px  solid #4b4c4d;
+    padding-top: 18px;
+    background: white;
+    padding-bottom: 50px;
+}
+
+p.copyright {
+    font-size: 12px;
+    color: #8C8989;
+}
+
+#content {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.header {
+    margin-top: 15px;
+}
+
+.clear {
+    clear: both;
+}
+
+.coa-gallery {
+    max-width: 540px;
+    display: inline-block;
+}
+
+/* The Front Page */
+.footer-navigation {
+    list-style-type: none;
+    padding: 0;
+    padding-top: 20px;
+}
+.footer-navigation > li  {
+    display: inline-block;
+    padding: 0 10px;
+}
+.footer-navigation > li a {
+    color: #506b9d;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: 'PT Sans';
+    font-size: 18px;
+}
+.social-networks {
+    display: block;
+    margin: auto;
+    width: 208px;
+    margin-bottom: 2px;
+}
+
+.social-network-icon {
+    float: left;
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-image: url('../images/social-links.png');
+}
+
+.facebook-icon { background-position: 0px;}
+.googleplus-icon { background-position: -32px;}
+.youtube-icon { background-position: -64px;}
+.pinterest-icon { background-position: -96px;}
+
+.woocommerce form .form-row select {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    height: 45px !important;
+}

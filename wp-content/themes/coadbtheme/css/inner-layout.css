@@ -1,0 +1,78 @@
+/* About Page CSS Here */
+.about-search-main {
+    background: url(../images/bg.png) no-repeat center;
+    background-size: cover;
+    padding: 40px 0 20px;
+}
+.about-search-main .input-group .form-control {
+    background: #fff;
+    height: 60px;
+    padding: 6px 22px;
+    border: 1px solid #345a9c;
+    color: #787878;
+    font-size: 16px;
+    -webkit-box-shadow: 0px 0px 19px 0px rgba(147,162,173,1);
+    -moz-box-shadow: 0px 0px 19px 0px rgba(147,162,173,1);
+    box-shadow: 0px 0px 19px 0px rgba(147,162,173,1);
+    -webkit-border-radius: 50px 0 0 50px;
+    -moz-border-radius: 50px 0 0 50px;
+    -o-border-radius: 50px 0 0 50px;
+    -ms-border-radius: 50px 0 0 50px;
+    border-radius: 4px 0 0 4px;
+}
+.about-search-main .input-group .input-group-btn button {
+    background: #345a9c;
+    height: 60px;
+    padding: 6px 22px;
+    color: #787878;
+    font-size: 16px;
+    border: 0 none;
+    -webkit-box-shadow: 0px 0px 19px 0px rgba(147,162,173,1);
+    -moz-box-shadow: 0px 0px 19px 0px rgba(147,162,173,1);
+    box-shadow: 0px 0px 19px 0px rgba(147,162,173,1);
+    -webkit-border-radius: 0 50px 50px 0;
+    -moz-border-radius: 0 50px 50px 0;
+    -o-border-radius: 0 50px 50px 0;
+    -ms-border-radius: 0 50px 50px 0;
+    border-radius: 0 4px 4px 0;
+}
+.about-search-main .input-group .input-group-btn button .fa {
+    color: #fff;
+    font-size: 35px;
+}
+.about-search-main h1 {
+    font-size: 44px;
+    color: #444;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 15px 0 0px;
+    font-family: "Vidaloka-Regular";
+    text-align: center;
+}
+.about-sect {
+	background: #e9eef1;
+	padding: 60px 0;
+}
+.about-sect .img-sect {
+	background: transparent;
+	padding: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
+}
+.about-sect .about-cont p {
+    font-size: 18px;
+    font-family: "RobotoSlab-Light";
+    color: #444;
+    line-height: 2;
+    margin: 0 0 20px;
+}
+@media (max-width: 767px) { 
+	.about-search-main h1 {font-size: 26px;}
+	.about-search-main .input-group .form-control {height: 46px; font-size: 14px;}
+	.about-search-main .input-group .input-group-btn button {height: 46px;}
+	.about-search-main .input-group .input-group-btn button .fa {font-size: 20px;}
+	.about-sect {padding: 30px 0;}
+}
