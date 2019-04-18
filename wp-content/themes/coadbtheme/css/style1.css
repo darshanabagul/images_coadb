@@ -44,6 +44,25 @@
     background: white;
     padding-top: 20px;
 }
+#cart_container {
+    float: right;
+}
+@media (max-width: 767px) {
+    .inner-page-nav {
+        padding-top: 10px;
+        text-align: center;
+    }
+    .navbar-nav {
+        display: inline-flex;
+    }
+    #cart_container {
+        float: none;
+    }
+    .header-search {
+        text-align: -webkit-center;
+        float: none !important;
+    }
+}
 /*------------------------------------*\
     Search Form (and variants)
 \*------------------------------------*/

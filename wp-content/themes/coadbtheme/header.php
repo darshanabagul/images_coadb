@@ -10,14 +10,14 @@
 	<nav class="inner-page-nav navbar-fixed-top">
 	  <div class="container">
 	  	<div class="row">
-    		<div class="col-xs-8 col-sm-4 col-md-4 col-lg-2">
+    		<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
 				<div class="navbar-header">
 				  	<a class="logo-link" href="https://coadb.com">
 	                    <img src="<?php echo get_site_url()?>/wp-content/uploads/2019/04/coadblogo-300x196.jpg" width="100" alt="Coat of Arms Database Logo" class="logo-img" />
 	               	</a>
 				</div>
 			</div>
-			<div class="col-xs-8 col-sm-4 col-md-4 col-lg-6">
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-6">
 				<?php $coat_of_arms = find_coat_of_arms();?>
 				<?php if(is_page_template('purchase-jpg.php')): ?>
 					<h1 class="header-title"><?php echo(ucfirst($coat_of_arms['page_slug'])) ?> Coat of Arms & Surname History</h1>
@@ -25,9 +25,10 @@
                 	<h1 class="header-title"><?php the_title(); ?></h1>
                 <?php endif; ?>
 			</div>
-			<div class="col-xs-4 col-sm-8 col-md-8 col-lg-4">
-				<div class="text-right header-call-to-action-btn" id="cart_container">
-					<?php if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+				<div id="cart_container">
+					<ul class="nav navbar-nav navbar-right">
+						<li><?php if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
 					    	$count = WC()->cart->cart_contents_count;
 					    ?>
 					    <a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php 
@@ -38,8 +39,7 @@
 					    	}
 					        ?>
 					    </a>
-					<?php } ?>
-					<ul class="nav navbar-nav navbar-right">
+					<?php } ?></li>
 						<li><a href="https://coadb.com/surname-list/surname-meaning-origin-family-history">Online Shop</a></li>
 						<?php if(!is_page_template('purchase-jpg.php')): ?>
 							<?php $page = $_SESSION['slug'];?>
