@@ -22,17 +22,24 @@ if(isset($_GET["fid"])){
     //call curl
     $handle = curl_init();
     
-    $url = "http://ec2-3-16-187-143.us-east-2.compute.amazonaws.com/coadb/coadb_API/Welcome/getValidUrl";
+    $whitelist = array(
+      '127.0.0.1',
+      '::1'
+    );
+
+    if(!in_array($_SERVER['REMOTE_ADDR'], $whitelist)) { 
+        $url = "http://ec2-3-16-187-143.us-east-2.compute.amazonaws.com/coadb/coadb_API/Welcome/getValidUrl";
+    }else {
+        $url = "http://localhost/coadb/coadb_API/Welcome/getValidUrl";
+    }
     
     // Array with the fields names and values.
     // The field names should match the field names in the form.
     
-    $imgName = str_replace('coat-of-arms-family-crest', 'withcrest', $imgName);
-    
     $postData = array(
       'Key' => $folderName.'/full_size/'. $imgName
     );
-     
+    
     curl_setopt_array($handle,
       array(
          CURLOPT_URL => $url,

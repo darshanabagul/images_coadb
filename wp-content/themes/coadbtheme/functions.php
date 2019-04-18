@@ -70,7 +70,7 @@ add_action('widgets_init', 'coadb_theme_widgets_init');
 */
 
 
-function find_coat_of_arms($items = 6) {
+function find_coat_of_arms() {
 	global $wp;
     session_start();
 	//$path = get_template_directory_uri() .'/processed_images/dolan/';
@@ -104,7 +104,7 @@ function find_coat_of_arms($items = 6) {
     $images = json_decode($images);
     
 	if (!empty($images)) {
-    	$coat_of_arms['images'] = array_chunk($images, $items);
+    	$coat_of_arms['images'] = $images;
 	}
     return $coat_of_arms;
 }

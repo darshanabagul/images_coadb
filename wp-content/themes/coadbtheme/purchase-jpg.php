@@ -13,13 +13,12 @@
 	            	<div id="demo" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
 						<div class="gallery row carousel-inner">
 					 		<?php
-				    			$args = array( 'post_type' => 'product', 'posts_per_page' => 10, 'product_cat' => 'JPG');
+				    			$args = array( 'post_type' => 'product', 'posts_per_page' => 1, 'product_cat' => 'JPG');
 				        		$loop = new WP_Query( $args );
-								if (!empty($coat_of_arms = find_coat_of_arms(20))) { ?>
+								if (!empty($coat_of_arms = find_coat_of_arms())) { ?>
 								<?php if(!empty($coat_of_arms['images'])) { ?>
-									<?php foreach($coat_of_arms['images'] as $key=>$img) { ?>
-										<div class="item <?php if($key==0) echo 'active' ?>">
-										<?php foreach ($img as $k=>$v) { ?>
+									<?php foreach($coat_of_arms['images'] as $key=>$v) { ?>
+										<div class="item active">
 											<?php
 					 						while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
 					 						<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
@@ -36,7 +35,6 @@
 										      	</div>
 									   		</div>
 									   		<?php endwhile; ?>
-									   	<?php } ?>
 									   	</div>
 								   	<?php } ?>
 					   			<?php } 
@@ -52,22 +50,6 @@
 		    		</div>
 				</div>
 		  	</div>
-
-		  	<?php if(count($coat_of_arms['images']) > 1) { ?>
-				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				  		<div class="pagination-main text-center clearfix">
-							<ul class="pagination">
-								<li><a class="color" href="#demo" data-slide="prev">Prev</a></li>
-								<?php for($i=1;$i<=count($coat_of_arms['images']);$i++) {?>						   
-								    <li><a data-target="#demo" data-slide-to="<?php echo $i-1?>" class="active"><?php echo $i; ?></a></li>
-								<?php } ?>
-								<li><a class="color" href="#demo" data-slide="next">Next</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			<?php } ?>
 		</div>
 	</section>
 </div>
