@@ -174,7 +174,7 @@ function add_usr_custom_session($product_name, $values, $cart_item_key ) {
 	$return_string = $product_name;
 	if($values['data']->get_name() == 'Digital JPG Image') {
 		$description = $values['_custom_options'];
-		$return_string = $product_name . "<br />" . ucfirst($description);
+		$return_string = $product_name . "<br /> (" . ($description) . ')';
 	}
 	return $return_string;
 }
@@ -195,7 +195,7 @@ function custom_new_product_image( $_product_img, $cart_item, $cart_item_key ) {
         $page = stripslashes(strtolower($cart_item['_custom_options']));
 		$description = $page;
 		$folderName = explode('-', $description);
-    	$a = '<img src="https://s3.us-east-2.amazonaws.com/bucket.coadb/'.$folderName[0].'/shop-images/'.$description.'" />';
+    	$a = '<img src="http://s3.us-east-2.amazonaws.com/bucket.coadb/'.$folderName[0].'/shop-images/'.$description.'" />';
     }
     return $a;
 }
