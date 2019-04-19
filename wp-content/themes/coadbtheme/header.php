@@ -3,6 +3,7 @@
 <html>
 <head>
 	<title></title>
+	<link rel="icon" href="https://images.coadb.com/wp-content/uploads/2019/04/coadblogo-300x196.ico" type="image/icon type">
 	<link href="http://www.google-analytics.com" rel="dns-prefetch">
 	<?php wp_head();?>
 </head>
