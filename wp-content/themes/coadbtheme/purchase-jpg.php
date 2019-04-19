@@ -21,7 +21,7 @@
 		 						<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
 							      	<div class="card-stamp">
 								      	<div class="image-box">
-								      		<img src="http://s3.us-east-2.amazonaws.com/bucket.coadb/<?php echo $coat_of_arms['page_slug']?>/shop-images/<?php echo $v?>" class="img-responsive">
+								      		<img src="https://s3.us-east-2.amazonaws.com/bucket.coadb/<?php echo $coat_of_arms['page_slug']?>/shop-images/<?php echo $v?>" class="img-responsive">
 								      	</div>
 								      	<div class="detail-box text-center">
 								      		<p class="price"><?php echo $product->get_price_html(); ?></p>
