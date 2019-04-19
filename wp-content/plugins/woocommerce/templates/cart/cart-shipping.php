@@ -24,6 +24,7 @@ $has_calculated_shipping  = ! empty( $has_calculated_shipping );
 $show_shipping_calculator = ! empty( $show_shipping_calculator );
 $calculator_text          = '';
 ?>
+<?php /*
 <tr class="woocommerce-shipping-totals shipping">
 	<th><?php echo wp_kses_post( $package_name ); ?></th>
 	<td data-title="<?php echo esc_attr( $package_name ); ?>">
@@ -43,7 +44,7 @@ $calculator_text          = '';
 					</li>
 				<?php endforeach; ?>
 			</ul>
-			<?php /* if ( is_cart() ) : ?>
+			<?php if ( is_cart() ) : ?>
 				<p class="woocommerce-shipping-destination">
 					<?php
 					if ( $formatted_destination ) {
@@ -55,7 +56,7 @@ $calculator_text          = '';
 					}
 					?>
 				</p>
-			<?php endif;*/ ?>
+			<?php endif;?>
 			<?php
 		elseif ( ! $has_calculated_shipping || ! $formatted_destination ) :
 			echo wp_kses_post( apply_filters( 'woocommerce_shipping_may_be_available_html', __( 'Enter your address to view shipping options.', 'woocommerce' ) ) );
@@ -77,3 +78,4 @@ $calculator_text          = '';
 		<?php endif; ?>
 	</td>
 </tr>
+*/ ?>
