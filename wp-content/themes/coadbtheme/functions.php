@@ -195,7 +195,7 @@ function custom_new_product_image( $_product_img, $cart_item, $cart_item_key ) {
         $page = stripslashes(strtolower($cart_item['_custom_options']));
 		$description = $page;
 		$folderName = explode('-', $description);
-    	$a = '<img src="https://s3.us-east-2.amazonaws.com/bucket.coadb/'.$folderName[0].'/shop-images/'.$description.'" />';
+    	$a = '<img src="http://s3.us-east-2.amazonaws.com/bucket.coadb/'.$folderName[0].'/shop-images/'.$description.'" />';
     }
     return $a;
 }
