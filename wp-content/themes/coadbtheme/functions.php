@@ -174,7 +174,7 @@ function add_usr_custom_session($product_name, $values, $cart_item_key ) {
 	$return_string = $product_name;
 	if($values['data']->get_name() == 'Digital JPG Image') {
 		$description = $values['_custom_options'];
-		$return_string = $product_name . "<br />" . ucfirst($description);
+		$return_string = $product_name . "<br /> (" . ($description) . ')';
 	}
 	return $return_string;
 }
